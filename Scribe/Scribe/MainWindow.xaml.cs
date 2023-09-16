@@ -23,6 +23,7 @@ namespace Scribe
         public MainWindow()
         {
             InitializeComponent();
+            btnUnderline.Content = TextDecorations.Underline;
         }
     }
 }

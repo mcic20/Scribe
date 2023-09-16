@@ -19,17 +19,13 @@
             <ColumnDefinition/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <RichTextBox x:Name="rtxtContent" Grid.ColumnSpan="2" Margin="10,51,10,38" IsManipulationEnabled="True">
-            <FlowDocument>
-                <Paragraph>
-                    <Run Text="RichTextBox"/>
-                </Paragraph>
-            </FlowDocument>
-        </RichTextBox>
+        <RichTextBox x:Name="rtxtContent" Grid.ColumnSpan="2" Margin="10,78,10,38" IsManipulationEnabled="True" AcceptsTab="True" IsDocumentEnabled="True"/>
         <TextBox x:Name="txtName" HorizontalAlignment="Left" Height="15" Margin="10,24,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="130"/>
         <Label x:Name="lblFileName" Content="Filename:" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Top"/>
         <Button x:Name="btnDiscard" Content="Discard" HorizontalAlignment="Left" Margin="30,407,0,0" VerticalAlignment="Top" Height="17" Width="68"/>
         <Button x:Name="btnSave" Grid.Column="1" Content="Save&#xD;&#xA;" HorizontalAlignment="Left" Margin="299,406,0,0" VerticalAlignment="Top" Width="59" Height="18"/>
+        <Button x:Name="btnBold" Content="B" HorizontalAlignment="Left" Margin="10,53,0,0" VerticalAlignment="Top" FontWeight="Bold" Height="20" Width="22" FontFamily="Arial Black" FontSize="14"/>
+        <Button x:Name="btnUnderline" Content="U" HorizontalAlignment="Left" Margin="40,53,0,0" VerticalAlignment="Top" Height="20" Width="22" FontFamily="Arial" FontSize="14"/>
 
     </Grid>
 </Window>
