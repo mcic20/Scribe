@@ -5,8 +5,31 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Scribe"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Scribe" Height="450" Width="800" Topmost="True" RenderTransformOrigin="1,0">
+    <Window.RenderTransform>
+        <TransformGroup>
+            <ScaleTransform/>
+            <SkewTransform/>
+            <RotateTransform/>
+            <TranslateTransform X="0"/>
+        </TransformGroup>
+    </Window.RenderTransform>
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <RichTextBox x:Name="rtxtContent" Grid.ColumnSpan="2" Margin="10,51,10,38" IsManipulationEnabled="True">
+            <FlowDocument>
+                <Paragraph>
+                    <Run Text="RichTextBox"/>
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+        <TextBox x:Name="txtName" HorizontalAlignment="Left" Height="15" Margin="10,24,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="130"/>
+        <Label x:Name="lblFileName" Content="Filename:" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btnDiscard" Content="Discard" HorizontalAlignment="Left" Margin="30,407,0,0" VerticalAlignment="Top" Height="17" Width="68"/>
+        <Button x:Name="btnSave" Grid.Column="1" Content="Save&#xD;&#xA;" HorizontalAlignment="Left" Margin="299,406,0,0" VerticalAlignment="Top" Width="59" Height="18"/>
 
     </Grid>
 </Window>
